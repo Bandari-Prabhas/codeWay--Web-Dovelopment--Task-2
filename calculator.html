@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            background-color:rgb(249, 216, 215);
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+            background-attachment: fixed;
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .d{
+           padding:35px;
+           width:700px;
+           height: 660px;
+           background-color:rgb(201, 155, 155);
+           margin: auto;
+           border-radius: 70px;
+           border: 3px rgb(255, 255, 255) solid;
+           
+        }
+        #bar{
+            width:680px;
+            height:150px;
+            background-color: rgb(236, 183, 164);
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 20px;
+            border: 3px rgb(255, 255, 255) solid;
+            justify-content: space-between;
+        }
+        .b{
+            width:140px;
+            height:80px;
+            border-radius:50px;
+            margin-left:20px;
+            background-color:rgb(255, 157, 157);
+            border: 5px rgb(255, 255, 255) solid;
+            font-size: 30px;
+        }
+
+        .b:active{
+            color:rgb(255, 255, 255);
+            background-color: rgb(255, 215, 215);
+        }
+        
+        .button{
+            width:140px;
+            height:80px;
+            border-radius:50px;
+            margin-left:20px;
+            background-color:rgb(255, 157, 157);
+            border: 5px rgb(255, 255, 255) solid;
+            font-size: 30px;
+
+        }
+        .button:active{
+            color:rgb(255, 255, 255);
+            background-color: rgb(255, 215, 215);
+        }
+        #delete{
+            width:680px;
+            height:60px;
+            background-color:rgb(255, 225, 137) ;
+            border: 7px rgb(255, 255, 255) solid;
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        #delete:hover{
+            opacity: 0.8;
+        }
+        #delete:active{
+            border: 7px rgb(247, 212, 16) solid;
+            background-color: white;
+            color: rgb(255, 214, 12);
+            border-radius: 10px;
+        }
+
+
+        h1{
+            background-color:rgb(220, 175, 209);
+            color:rgb(106, 248, 226) ;
+            text-align: center;
+            border: 5px rgb(255, 255, 255) solid;
+            
+        }
+    </style>
+</head>
+<body>
+  <h1>CALCULATOR</h1>
+    <div class="d">
+        <form name="cal" class="f">
+            <input type="text" name="display" id="bar">
+            <br><br>
+            <input type="button" value="7" onclick="cal.display.value+='7'"class="button">
+            <input type="button" value="8" onclick="cal.display.value+='8'" class="button">
+            <input type="button" value="9" onclick="cal.display.value+='9'" class="button">
+            <input type="button" value="+" onclick="cal.display.value+='+'" class="b">
+            <br><br>
+            <input type="button" value="4" onclick="cal.display.value+='4'" class="button">
+            <input type="button" value="5" onclick="cal.display.value+='5'"class="button">
+            <input type="button" value="6" onclick="cal.display.value+='6'"class="button">
+            <input type="button" value="-" onclick="cal.display.value+='-'" class="b">
+            <br><br>
+            <input type="button" value="1" onclick="cal.display.value+='1'" class="button">
+            <input type="button" value="2" onclick="cal.display.value+='2'"class="button">
+            <input type="button" value="3" onclick="cal.display.value+='3'"class="button">
+            <input type="button" value="*" onclick="cal.display.value+='*'"class="b">
+            <br><br>
+            <input type="button" value="0" onclick="cal.display.value+='0'" class="button">
+            <input type="button" value="/" onclick="cal.display.value+='/'" class="button">
+            <input type="button" value="%" onclick="cal.display.value+='%'" class="button">
+            <input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)" class="b">
+            <br><br>
+            <input type="button" value="DELETE" onclick="cal.display.value=''"id="delete">
+    </div>
+    
+</body>
+</html>
